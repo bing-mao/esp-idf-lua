@@ -35,5 +35,5 @@ set(srcs "lua/lapi.c"
 set(include_dirs lua)
 
 idf_component_register(SRCS "${srcs}"
-                       INCLUDE_DIRS "${include_dirs}")
+                       INCLUDE_DIRS .)
 
