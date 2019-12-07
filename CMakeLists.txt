@@ -32,8 +32,7 @@ set(srcs "lua/lapi.c"
          "lua/lvm.c"
          "lua/lzio.c")
 
-set(include_dirs lua)
-
 idf_component_register(SRCS "${srcs}"
                        INCLUDE_DIRS .)
 
+target_compile_definitions(${COMPONENT_LIB} PUBLIC "-DLUA_COMPAT_MODULE")
